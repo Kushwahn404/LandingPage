@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(./images/hendrik-cornelissen-qs4E9t0hJc0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    width: 100%;
+    position: relative;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: #fff;
+    bottom: 5%;
+
+}
+.text .image{
+    background-image: url(./images/top.jpg);
+    height: 300px;
+    width: 220px;
+    background-size: cover;
+    background-position: center;
+}
+.rtext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+.bottom{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(./images/dave-goudreau-cFRxg5bI4tU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(./images/blind-man-8oXznmXj5M8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    color: #fff;
+    text-align: center;
+}
+.b2 .up p{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(./images/francesco-ungaro-y6bSBHo2Cfc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down h1{
+    color: #fff;
+    text-align: center;
+}
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(./images/top.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    position: 4vw 3vh;
+}
+.b3 p{
+    color: black;
+    font-weight: 600;
+    padding: 1.2vh;
+}
+@media (max-width:700px) {
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+@media (max-width:500px) {
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .text .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text .rtext p{
+        margin-top: 10px;
+    }
+    .text .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bottom .b1{
+        width: 100%;
+    }
+    .bottom .b2{
+        width: 100%;
+    }
+    .bottom .b3{
+        width: 100%;
+    }
+    
+}
